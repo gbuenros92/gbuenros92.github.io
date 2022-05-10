@@ -261,6 +261,22 @@ window.addEventListener('click', e => {
     projectiles.push(new Projectile(canvas.width / 2, canvas.height / 2, 5, 'rgb(242, 242, 242)', velocity));
 })
 
+window.addEventListener('touchstart', e => {
+
+    // Dynamically calculates the angle from position of click relative to player position
+    const angle = Math.atan2(
+        e.clientY - canvas.height / 2,
+        e.clientX - canvas.width / 2
+    );
+
+    const velocity = {
+        x: Math.cos(angle) * 5,
+        y: Math.sin(angle) * 5
+    }
+
+    projectiles.push(new Projectile(canvas.width / 2, canvas.height / 2, 5, 'rgb(242, 242, 242)', velocity));
+})
+
 btn.addEventListener('click', () => {
     init();
     animate();

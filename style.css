@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#player-score {
+    position: fixed;
+    color: rgb(242, 242, 242);
+    user-select: none;
+    font-family: 'Righteous', cursive;
+    font-size: 1.2rem;
+    padding: 0 0 0 15px;
+}
+
+#container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    font-family: 'Righteous', cursive;
+    user-select: none;
+}
+
+#white-bg {
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#button-container {
+    padding: 20px 0 0 0;
+}
+
+#final-score {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#points-txt {
+    font-size: 1rem;
+    color: gray;
+}
+
+button { 
+    background-color: dodgerblue;
+    color: rgb(242, 242, 242);
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Righteous', cursive;
+    width: 350px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
